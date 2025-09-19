@@ -1,0 +1,10 @@
+C:\Users\Ngọc_Ánh\source\repos\Dự án cuối kì OOP\bin\Debug\Dự án cuối kì OOP.exe.config
+C:\Users\Ngọc_Ánh\source\repos\Dự án cuối kì OOP\bin\Debug\Dự án cuối kì OOP.exe
+C:\Users\Ngọc_Ánh\source\repos\Dự án cuối kì OOP\bin\Debug\Dự án cuối kì OOP.pdb
+C:\Users\Ngọc_Ánh\source\repos\Dự án cuối kì OOP\obj\Debug\Dự án cuối kì OOP.csproj.AssemblyReference.cache
+C:\Users\Ngọc_Ánh\source\repos\Dự án cuối kì OOP\obj\Debug\Dự_án_cuối_kì_OOP.Properties.Resources.resources
+C:\Users\Ngọc_Ánh\source\repos\Dự án cuối kì OOP\obj\Debug\Dự án cuối kì OOP.csproj.GenerateResource.cache
+C:\Users\Ngọc_Ánh\source\repos\Dự án cuối kì OOP\obj\Debug\Dự án cuối kì OOP.csproj.CoreCompileInputs.cache
+C:\Users\Ngọc_Ánh\source\repos\Dự án cuối kì OOP\obj\Debug\Dự án cuối kì OOP.exe
+C:\Users\Ngọc_Ánh\source\repos\Dự án cuối kì OOP\obj\Debug\Dự án cuối kì OOP.pdb
+C:\Users\Ngọc_Ánh\source\repos\Dự án cuối kì OOP\obj\Debug\Dự_án_cuối_kì_OOP.PersonalScheduleManager.resources

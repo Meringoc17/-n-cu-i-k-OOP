@@ -54,6 +54,7 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnChangeBackGround = new System.Windows.Forms.Button();
             this.gbRemind = new System.Windows.Forms.GroupBox();
             this.cboInterval = new System.Windows.Forms.ComboBox();
             this.lblQuet = new System.Windows.Forms.Label();
@@ -81,6 +82,7 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colTitle,
@@ -90,6 +92,7 @@
             this.colPriority});
             dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridView1.Location = new System.Drawing.Point(516, 3);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
@@ -144,7 +147,7 @@
             // 
             // menuMain
             // 
-            this.menuMain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menuMain.BackgroundImage")));
+            this.menuMain.BackColor = System.Drawing.Color.Transparent;
             this.menuMain.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuMain.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -184,7 +187,7 @@
             // 
             // toolStrip1
             // 
-            this.toolStrip1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("toolStrip1.BackgroundImage")));
+            this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
@@ -295,7 +298,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.btnChangeBackGround);
             this.panel1.Controls.Add(this.gbRemind);
             this.panel1.Controls.Add(this.gbUser);
             this.panel1.Controls.Add(this.gbFilter);
@@ -305,14 +309,24 @@
             this.panel1.Size = new System.Drawing.Size(507, 695);
             this.panel1.TabIndex = 0;
             // 
+            // btnChangeBackGround
+            // 
+            this.btnChangeBackGround.Location = new System.Drawing.Point(125, 638);
+            this.btnChangeBackGround.Name = "btnChangeBackGround";
+            this.btnChangeBackGround.Size = new System.Drawing.Size(226, 49);
+            this.btnChangeBackGround.TabIndex = 3;
+            this.btnChangeBackGround.Text = "Đổi BackGround";
+            this.btnChangeBackGround.UseVisualStyleBackColor = true;
+            this.btnChangeBackGround.Click += new System.EventHandler(this.btnChangeBackGround_Click_1);
+            // 
             // gbRemind
             // 
-            this.gbRemind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gbRemind.BackgroundImage")));
+            this.gbRemind.BackColor = System.Drawing.Color.Transparent;
             this.gbRemind.Controls.Add(this.cboInterval);
             this.gbRemind.Controls.Add(this.lblQuet);
             this.gbRemind.Location = new System.Drawing.Point(-3, 518);
             this.gbRemind.Name = "gbRemind";
-            this.gbRemind.Size = new System.Drawing.Size(510, 131);
+            this.gbRemind.Size = new System.Drawing.Size(510, 114);
             this.gbRemind.TabIndex = 2;
             this.gbRemind.TabStop = false;
             this.gbRemind.Text = "Nhắc việc";
@@ -344,7 +358,8 @@
             // 
             // gbUser
             // 
-            this.gbUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gbUser.BackgroundImage")));
+            this.gbUser.BackColor = System.Drawing.Color.Transparent;
+            this.gbUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.gbUser.Controls.Add(this.btnChonNguoiDung);
             this.gbUser.Controls.Add(this.lblUserTitle);
             this.gbUser.Location = new System.Drawing.Point(-3, 319);
@@ -376,7 +391,8 @@
             // 
             // gbFilter
             // 
-            this.gbFilter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gbFilter.BackgroundImage")));
+            this.gbFilter.BackColor = System.Drawing.Color.Transparent;
+            this.gbFilter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gbFilter.Controls.Add(this.rbUuTien);
             this.gbFilter.Controls.Add(this.rbTheoTuan);
             this.gbFilter.Controls.Add(this.rbTheoNgay);
@@ -395,7 +411,7 @@
             this.rbUuTien.AutoSize = true;
             this.rbUuTien.BackColor = System.Drawing.Color.Transparent;
             this.rbUuTien.Checked = true;
-            this.rbUuTien.Location = new System.Drawing.Point(54, 258);
+            this.rbUuTien.Location = new System.Drawing.Point(42, 258);
             this.rbUuTien.Name = "rbUuTien";
             this.rbUuTien.Size = new System.Drawing.Size(134, 41);
             this.rbUuTien.TabIndex = 4;
@@ -407,7 +423,7 @@
             // 
             this.rbTheoTuan.AutoSize = true;
             this.rbTheoTuan.BackColor = System.Drawing.Color.Transparent;
-            this.rbTheoTuan.Location = new System.Drawing.Point(54, 211);
+            this.rbTheoTuan.Location = new System.Drawing.Point(38, 211);
             this.rbTheoTuan.Name = "rbTheoTuan";
             this.rbTheoTuan.Size = new System.Drawing.Size(167, 41);
             this.rbTheoTuan.TabIndex = 3;
@@ -418,7 +434,7 @@
             // 
             this.rbTheoNgay.AutoSize = true;
             this.rbTheoNgay.BackColor = System.Drawing.Color.Transparent;
-            this.rbTheoNgay.Location = new System.Drawing.Point(54, 164);
+            this.rbTheoNgay.Location = new System.Drawing.Point(38, 164);
             this.rbTheoNgay.Name = "rbTheoNgay";
             this.rbTheoNgay.Size = new System.Drawing.Size(172, 41);
             this.rbTheoNgay.TabIndex = 2;
@@ -430,16 +446,16 @@
             this.dtpNgay.CalendarForeColor = System.Drawing.Color.Transparent;
             this.dtpNgay.CustomFormat = "dd/MM/yyyy";
             this.dtpNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgay.Location = new System.Drawing.Point(54, 115);
+            this.dtpNgay.Location = new System.Drawing.Point(38, 115);
             this.dtpNgay.Name = "dtpNgay";
-            this.dtpNgay.Size = new System.Drawing.Size(220, 43);
+            this.dtpNgay.Size = new System.Drawing.Size(188, 43);
             this.dtpNgay.TabIndex = 1;
             // 
             // lblNgay
             // 
             this.lblNgay.AutoSize = true;
             this.lblNgay.BackColor = System.Drawing.Color.Transparent;
-            this.lblNgay.Location = new System.Drawing.Point(47, 58);
+            this.lblNgay.Location = new System.Drawing.Point(31, 59);
             this.lblNgay.Name = "lblNgay";
             this.lblNgay.Size = new System.Drawing.Size(93, 37);
             this.lblNgay.TabIndex = 0;
@@ -449,7 +465,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1654, 789);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.toolStrip1);
@@ -517,9 +532,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colEnd;
         private System.Windows.Forms.DataGridViewTextBoxColumn colType;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPriority;
-        private System.Windows.Forms.DataGridView dataGridView1;
-
-
+        private System.Windows.Forms.Button btnChangeBackGround;
     }
 }
 
